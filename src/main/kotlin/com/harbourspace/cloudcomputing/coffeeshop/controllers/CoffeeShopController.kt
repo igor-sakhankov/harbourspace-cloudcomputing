@@ -12,7 +12,7 @@ class CoffeeShopController {
 
     @GetMapping("/v1/coffee/favourite")
     fun getCoffeeShop(@RequestHeader(HttpHeaders.AUTHORIZATION) authHeader: String): DataVm<FavouriteCoffeeVm> {
-        if(authHeader != "my_test_header") {
+        if (authHeader != "my_test_header") {
             throw Exception("Invalid auth header")
         }
 
