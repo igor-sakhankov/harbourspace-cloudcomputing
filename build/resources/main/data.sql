@@ -1,1 +1,0 @@
-INSERT INTO baristas (ID, LASTNAME, VOTES, CREATED, UPDATED) VALUES (1, 'harbour', 0, NOW(), NOW());
