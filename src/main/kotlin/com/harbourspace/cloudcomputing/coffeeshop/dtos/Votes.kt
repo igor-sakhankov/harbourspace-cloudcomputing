@@ -1,4 +1,4 @@
-package com.harbourspace.cloudcomputing.dtos
+package com.harbourspace.cloudcomputing.coffeeshop.dtos
 
 import com.fasterxml.jackson.annotation.JsonProperty
 

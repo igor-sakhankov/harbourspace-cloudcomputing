@@ -2,7 +2,7 @@ package com.harbourspace.cloudcomputing.coffeeshop.services
 
 import com.harbourspace.cloudcomputing.coffeeshop.entities.HistoryEntity
 import com.harbourspace.cloudcomputing.coffeeshop.repositories.HistoryRepository
-import com.harbourspace.cloudcomputing.dtos.Votes
+import com.harbourspace.cloudcomputing.coffeeshop.dtos.Votes
 import lombok.RequiredArgsConstructor
 import org.springframework.stereotype.Service
 

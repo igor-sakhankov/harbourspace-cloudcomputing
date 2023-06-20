@@ -1,7 +1,7 @@
 package com.harbourspace.cloudcomputing.coffeeshop.controllers
 
 import com.harbourspace.cloudcomputing.coffeeshop.services.BaristaService
-import com.harbourspace.cloudcomputing.dtos.Votes
+import com.harbourspace.cloudcomputing.coffeeshop.dtos.Votes
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.PostMapping

@@ -3,7 +3,7 @@ package com.harbourspace.cloudcomputing.coffeeshop.services
 import com.harbourspace.cloudcomputing.coffeeshop.entities.HistoryEntity
 import com.harbourspace.cloudcomputing.coffeeshop.repositories.BaristaRepository
 import com.harbourspace.cloudcomputing.coffeeshop.repositories.HistoryRepository
-import com.harbourspace.cloudcomputing.dtos.Votes
+import com.harbourspace.cloudcomputing.coffeeshop.dtos.Votes
 import jakarta.transaction.Transactional
 import org.springframework.retry.annotation.Retryable
 import org.springframework.stereotype.Service
