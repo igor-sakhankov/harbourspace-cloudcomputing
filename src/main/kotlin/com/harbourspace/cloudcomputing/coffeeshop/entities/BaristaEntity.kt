@@ -1,5 +1,6 @@
 package com.harbourspace.cloudcomputing.coffeeshop.entities
 
+
 import jakarta.persistence.Column
 import jakarta.persistence.Entity
 import jakarta.persistence.Id
@@ -7,7 +8,6 @@ import jakarta.persistence.Table
 import org.hibernate.annotations.CreationTimestamp
 import org.hibernate.annotations.UpdateTimestamp
 import java.time.LocalDateTime
-
 @Entity
 @Table(name = "baristas")
 data class BaristaEntity(
