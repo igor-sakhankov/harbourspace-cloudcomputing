@@ -1,0 +1,56 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: coffee-app-deployment
+  labels:
+    app: coffee-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: coffee-app
+  template:
+    metadata:
+      labels:
+        app: coffee-app
+    spec:
+      containers:
+        - image: docker.io/igorsakhankov/harbourspace_cloudcomputing:latest
+          name: coffee-app
+          env:
+          - name: "AWS_KEY_ID"
+            valueFrom:
+              secretKeyRef:
+                name: harbour-secret
+                key: AWS_KEY_ID
+          - name: "AWS_REGION"
+            valueFrom:
+              secretKeyRef:
+                name: harbour-secret
+                key: AWS_REGION
+          - name: "AWS_SECRET"
+            valueFrom:
+              secretKeyRef:
+                name: harbour-secret
+                key: AWS_SECRET
+          - name: "CLUSTER_API_KEY"
+            valueFrom:
+              secretKeyRef:
+                name: harbour-secret
+                key: CLUSTER_API_KEY
+          - name: "CLUSTER_API_SECRET"
+            valueFrom:
+              secretKeyRef:
+                name: harbour-secret
+                key: CLUSTER_API_SECRET
+          resources:
+            requests:
+              cpu: "1"
+              memory: "1024Mi"
+            limits:
+              cpu: "2"
+              memory: "2048Mi"
+          ports:
+            - containerPort: 8080
+              name: http
+              protocol: TCP
