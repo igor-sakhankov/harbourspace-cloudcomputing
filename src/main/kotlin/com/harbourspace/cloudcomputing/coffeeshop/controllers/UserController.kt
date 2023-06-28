@@ -5,10 +5,12 @@ import com.harbourspace.cloudcomputing.coffeeshop.dtos.CreateEmailCommand
 import com.harbourspace.cloudcomputing.coffeeshop.services.KafkaPublisher
 import com.harbourspace.cloudcomputing.coffeeshop.services.MessagePublisherService
 import com.harbourspace.cloudcomputing.coffeeshop.services.UserService
+import org.springframework.context.annotation.Profile
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody
 
 @org.springframework.web.bind.annotation.RestController
+@Profile("aws")
 class UserController(
     val userService: UserService,
     val messagePublisherService: MessagePublisherService,

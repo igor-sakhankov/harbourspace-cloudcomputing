@@ -28,7 +28,14 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("com.amazonaws:aws-java-sdk-sqs:1.12.349")
     implementation("com.google.code.gson:gson:2.8.9")
-    developmentOnly("org.springframework.boot:spring-boot-devtools")
+
+    implementation("software.amazon.awssdk:dynamodb:2.20.35")
+    implementation("software.amazon.awssdk:dynamodb-enhanced:2.20.35")
+    implementation("software.amazon.awssdk:apache-client:2.20.35")
+    implementation("software.amazon.awssdk:aws-cbor-protocol:2.20.35")
+    implementation("software.amazon.awssdk:netty-nio-client:2.20.35")
+    implementation("software.amazon.awssdk:sts:2.20.35")
+
     runtimeOnly("com.h2database:h2")
     runtimeOnly("com.mysql:mysql-connector-j")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
