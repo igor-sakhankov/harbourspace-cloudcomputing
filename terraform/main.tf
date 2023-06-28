@@ -4,7 +4,7 @@ resource "aws_s3_bucket" "harbour-bucket-terraform" {
 
   tags = {
     Name        = "harbour-bucket-terraform"
-    Environment = "Dev"
+    Environment = "dev"
   }
 }
 
