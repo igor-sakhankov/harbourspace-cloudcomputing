@@ -28,7 +28,7 @@ replay_pid*
 .build/
 build/
 
-infrastructure/.terraform
-infrastructure/.terraform.lock.hcl
-infrastructure/terraform.tfstate
-infrastructure/terraform.tfstate.backup
+terraform-local/.terraform
+terraform-local/.terraform.lock.hcl
+terraform-local/terraform.tfstate
+terraform-local/terraform.tfstate.backup
