@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "harbour-bucket-terraform" {
-  bucket = "harbour-bucket-terraform"
+  bucket        = "harbour-bucket-terraform"
   force_destroy = true
 
   tags = {
